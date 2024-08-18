@@ -1,10 +1,4 @@
   
-    
-    function getComputerChoice() {
-    return Math.floor(Math.random() * 3 + 1);};
-
-    let ComputerChoice = getComputerChoice();
-
     let answer = prompt("choose rock paper or scissors");
 
     function getHumanChoice(){
@@ -19,6 +13,10 @@
          let counter = playRound();
          let roundsPlayed = counter;
         function playRound() {
+            function getComputerChoice() {
+                return Math.floor(Math.random() * 3 + 1);
+                };
+                var ComputerChoice = getComputerChoice();
                 if ((ComputerChoice === 1 && answer.toLowerCase() === "rock") || (ComputerChoice === 2 && answer.toLowerCase() === "scissors") || (ComputerChoice === 3 && answer.toLowerCase() === "paper")){
             console.log('tie!');
         } 
@@ -36,23 +34,16 @@
             return 'you either inputted the wrong answer or its broken';
         }
               } 
-            (humanScore + "-" + computerScore);
-   
-            let rrr = 1;
-            // let totalScore = "humanScore" + "computerScore";
-            for (let counter = 0 ;counter < 4; counter++) {
+                    
+              let rrr = 1;
+              for (let counter = 1 ;counter <= 4; counter++) {
                 answer = prompt("choose rock paper or scissors round " + rrr++).toLowerCase();
-                console.log(playRound(ComputerChoice, humanChoice));
+                playRound();
                         }
+                alert("final score: " + (humanScore + "-" + computerScore));
+                        
             }
-
-
-
-    // console.log(getComputerChoice());
-    // console.log( typeof getComputerChoice());
-    // console.log(answer);
     console.log(playGame());
-    // console.log(humanScore + "-" + computerScore);
 
 
 

@@ -21,20 +21,25 @@
             console.log('tie!');
         } 
         else if ((ComputerChoice === 2 && answer.toLowerCase() === "rock") || (ComputerChoice === 3 && answer.toLowerCase() === "scissors") || (ComputerChoice === 1 && answer.toLowerCase() === "paper")){
-            console.log('you win') && ++humanScore;
+            console.log('you win') ;
+            ++humanScore;
         } 
         else if ((ComputerChoice === 3 && answer.toLowerCase() === "rock") || (ComputerChoice === 1 && answer.toLowerCase() === "scissors") || (ComputerChoice === 2 && answer.toLowerCase() === "paper")){
-            console.log('you lose') && ++computerScore;
+            console.log('you lose') ;
+            ++computerScore;
         }
         else {
             return 'you either inputted the wrong answer or its broken';
         }
-              }
+              } // test computer Score & HumanScore
+
 
     // console.log(getComputerChoice());
     // console.log( typeof getComputerChoice());
     // console.log(answer);
-    console.log (playRound());
+    console.log(playRound());
+    console.log(humanScore);
+    console.log(computerScore);
 
 
     

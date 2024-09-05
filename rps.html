@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="rps.js"></script>
 </head>
 <body>
 
+<div id="choices">
+    <button id="rock" onclick= playRound()> rock</button>
+    <button id="paper" onclick= playRound()> paper</button>
+    <button id="scissors" onclick= playRound()> scissors</button>
+</div>
+<div id="result"> </div>
+<div><span id="score"></span></div>
+<div id="finalScore"> </div>
+<button onclick = reset()> Press for reset</button>
 
-ROCK PAPER SCISSORS!!!!!!!!!!!!!!!
+    <script src="rps.js" defer></script>
 
     
 </body>
